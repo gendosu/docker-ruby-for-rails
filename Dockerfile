@@ -7,7 +7,6 @@ FROM      gendosu/ruby:latest
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
 RUN apt-get update \
-&&  apt-get upgrade -y --force-yes \
 &&  apt-get install -y --force-yes \
     fonts-hanazono \
     imagemagick \
