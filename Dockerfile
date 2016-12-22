@@ -8,6 +8,7 @@ MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
 RUN apt-get update \
 &&  apt-get install -y --force-yes \
+    build-essential \
     fonts-hanazono \
     imagemagick \
     fonts-migmix \
@@ -17,7 +18,8 @@ RUN apt-get update \
     psmisc \
     sudo \
     python \
+    curl \
+    vim \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
-
 
