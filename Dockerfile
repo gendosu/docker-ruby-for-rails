@@ -20,6 +20,7 @@ RUN apt-get update \
     python \
     curl \
     vim \
+    procps \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
