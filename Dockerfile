@@ -21,6 +21,7 @@ RUN apt-get update \
     curl \
     vim \
     procps \
+    apt-transport-https \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
