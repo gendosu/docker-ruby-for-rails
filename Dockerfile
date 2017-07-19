@@ -6,6 +6,8 @@ FROM      gendosu/ruby:latest
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
+ENV PATH ./bin:$PATH
+
 RUN apt-get update \
 &&  apt-get install -y --force-yes \
     build-essential \

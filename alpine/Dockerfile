@@ -6,6 +6,8 @@ FROM      gendosu/ruby:alpine
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
+ENV PATH ./bin:$PATH
+
 RUN apk add --update \
     fontconfig \
     imagemagick \
