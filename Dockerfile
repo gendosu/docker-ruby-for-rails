@@ -24,6 +24,6 @@ RUN apt-get update \
     vim \
     procps \
     apt-transport-https \
+    cmake \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
-
