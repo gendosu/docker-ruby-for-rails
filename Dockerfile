@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.1
 
-FROM      gendosu/ruby:latest
+FROM      gendosu/ruby:2.4.3
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
