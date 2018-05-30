@@ -6,7 +6,7 @@ FROM      gendosu/ruby:2.5.0-alpine
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
-ENV PATH ./bin:$PATH
+ENV PATH $PATH:./bin
 
 RUN apk add --update \
     fontconfig \
