@@ -6,7 +6,7 @@ FROM      gendosu/ruby:2.4.4
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
-ENV PATH ./bin:$PATH
+ENV PATH $PATH:./bin
 
 RUN apt-get update \
 &&  apt-get install -y --force-yes \
