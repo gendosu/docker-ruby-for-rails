@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.1
 
-FROM      gendosu/ruby:latest
+FROM      gendosu/ruby:2.6.1
 
 ENV PATH $PATH:./bin
 
