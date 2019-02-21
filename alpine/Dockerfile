@@ -4,14 +4,12 @@
 
 FROM      gendosu/ruby:alpine
 
-MAINTAINER Gen Takahashi "gendosu@gmail.com"
-
 ENV PATH $PATH:./bin
 
 RUN apk add --update \
-    fontconfig \
-    imagemagick \
-&&  rm -rf /var/cache/apk/*
+  fontconfig \
+  imagemagick \
+  &&  rm -rf /var/cache/apk/*
 
 # Install ja-font
 COPY fonts.conf /root/.config/fontconfig/
