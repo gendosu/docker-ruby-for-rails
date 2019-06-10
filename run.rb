@@ -4,10 +4,12 @@ File.foreach('list.txt') do |line|
   @line = line.strip
 
   system "git checkout master"
-  system "git checkout #{@line}"
+  unless system "git checkout -b #{@line}"
+    system "git checkout #{@line}"
+    system "git pull -p"
+  end
 
-  ['./alpine'].each do |dir_path|
-    # ['./', './alpine'].each do |dir_path|
+  ['./', './alpine'].each do |dir_path|
     File.open("#{dir_path}/Dockerfile.erb") do |erb|
       template = ERB.new(erb.read)
       File.open("#{dir_path}/Dockerfile", 'w+') do |docker|
