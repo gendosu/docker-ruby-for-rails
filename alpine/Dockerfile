@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.1
 
-FROM gendosu/ruby-node:ruby-2.3.7-node-8.11.3-alpine
+FROM gendosu/ruby-node:ruby-2.6.4-node-12.3.0-alpine
 
 ENV PATH $PATH:./bin
 
