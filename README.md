@@ -13,6 +13,7 @@ do not put rails gem
 # Supported tags and respective Dockerfile links
 
 * `latest` [(Dockerfile)](https://github.com/gendosu/docker-ruby-for-rails)
+* `ruby-2.6.5-node-12.4.0`, `ruby-2.6.5-node-12.4.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-for-rails/blob/ruby-2.6.5-node-12.4.0)
 * `ruby-2.6.5-node-12.3.1`, `ruby-2.6.5-node-12.3.1-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-for-rails/blob/ruby-2.6.5-node-12.3.1)
 * `ruby-2.6.4-node-12.3.0`, `ruby-2.6.4-node-12.3.0-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-for-rails/blob/ruby-2.6.4-node-12.3.0)
 * `2`, `2-alpine` [(Dockerfile)](https://github.com/gendosu/docker-ruby-for-rails/blob/2)
